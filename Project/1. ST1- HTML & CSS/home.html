@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ST1</title>
+  <style media="screen">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      overflow: hidden;
+    }
+
+    header {
+      width: 100%;
+      text-align: center;
+      background-color: #4a8fff;
+      padding: 0.5% 0;
+    }
+
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0 5px;
+    }
+
+    nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+      transition: all .5s;
+    }
+
+    .column {
+      float: left;
+      padding: 10px;
+      height: 650px;
+    }
+
+    .left,
+    .right {
+      width: 25%;
+    }
+
+    .middle {
+      width: 50%;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .span {
+      font-weight: bold;
+      font-size: 120%;
+      color: black;
+    }
+
+    h2,
+    p {
+      color: White;
+      text-align: center;
+    }
+
+    nav.shift ul li a {
+      position: relative;
+      z-index: 1;
+    }
+
+    nav.shift ul li a:hover {
+      color: #333;
+    }
+
+    nav.shift ul li a:after {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+      height: 1px;
+      content: '.';
+      color: transparent;
+      background: #fff;
+      visibility: none;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    nav.shift ul li a:hover:after {
+      opacity: 1;
+      visibility: visible;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="shift">
+      <ul>
+        <li> <a href="#">Home</a> </li>
+        <li> <a href="news.html">News</a> </li>
+        <li> <a href="contact.html">Contact</a> </li>
+        <li> <a href="about.html">About</a> </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <div class="row">
+      <div class="column left" style="background-color:#EF5B0C;">
+        <h2>Colors of the Flag</h2>
+        <p>
+          In the national flag of India the top band is of Saffron colour, indicating the strength and courage of the country. The white middle band indicates peace and truth with Dharma Chakra. The last band is green in colour shows the fertility,
+          growth and auspiciousness of the land.
+        </p>
+      </div>
+      <div class="column middle" style="background-color:#D4F6CC;">
+        <h2 style="color: navy;">National Flag</h2>
+        <p style="color: navy;">
+          Every free nation of the world has its own flag. It is a symbol of a free country. The National Flag of India was adopted in its present form during the meeting of Constituent Assembly held on the 22 July 1947, a few days before India's
+          independence from the British on 15 August, 1947. It served as the national flag of the Dominion of India between 15 August 1947 and 26 January 1950 and that of the Republic of India thereafter. In India, the term "tricolour" refers to the
+          Indian national flag.<br>The National flag of India is a horizontal tricolor of deep saffron (kesari) at the top, white in the middle and dark green at the bottom in equal proportion. The ratio of width of the flag to its length is two to
+          three. In the centre of the white band is a navy blue wheel which represents the chakra. Its design is that of the wheel which appears on the abacus of the Sarnath Lion Capital of Ashoka. Its diameter approximates to the width of the white
+          band and it has 24 spokes.
+        </p>
+      </div>
+      <div class="column right" style="background-color:#3CCF4E;">
+        <h2>The Chakra</h2>
+        <p>
+          This Dharma Chakra depicted the "wheel of the law" in the Sarnath Lion Capital made by the 3rd-century BC Mauryan Emperor Ashoka. The chakra intends to show that there is life in movement and death in stagnation.
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer></footer>
+</body>
+
+</html>
