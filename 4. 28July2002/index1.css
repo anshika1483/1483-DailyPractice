@@ -1,0 +1,19 @@
+body {
+  font-size: 40px;
+}
+
+#divMain {
+  font-size: 32px;
+}
+
+#div1 {
+  font-size: 2em;
+}
+
+#div2 {
+  font-size: 2rem;
+}
+
+#div3 {}
+
+#div4 {}
