@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <script type="text/javascript">
+      function myFn() {
+        let n1 = document.getElementById("n1").value;
+        let n2 = document.getElementById("n2").value;
+        n1 = Number(n1);
+        n2 = Number(n2);
+        var a = n1%n2;
+        var b = n1-a;
+        if (n2>n1) {
+          alert("Number of members in a team are more than number of balls.");
+        }
+        else {
+          if (b/n2 == 1) {
+            alert("Each member will get " + b/n2 + " ball and the remaining balls are " + a + ".");
+          }
+          else {
+            alert("Each member will get " + b/n2 + " balls and the remaining balls are " + a + ".");
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    Enter the number of balls: <input type="text" name="n1" id="n1"><br>
+      Enter the number of members in team: <input type="text" name="n2" id="n2"><br>
+    <button type="button" name="button" onclick="myFn()">Calculate</button>
+  </body>
+
+</html>
