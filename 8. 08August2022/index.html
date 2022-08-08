@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <p id = "demo1"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+    <p id = "demo4"></p>
+    <p id = "demo5"></p>
+    <p id = "demo6"></p>
+    <p id = "demo7"></p>
+    <p id = "demo8"></p>
+    <script type="text/javascript">
+      document.getElementById("demo1").innerHTML = "Truncate = " + Math.trunc(4.7);
+      document.getElementById("demo2").innerHTML = "Round = " + Math.round(4.7);
+      document.getElementById("demo3").innerHTML = "Power = " + Math.pow(8, 2);
+      document.getElementById("demo4").innerHTML = "Square Root = " + Math.sqrt(8);
+      document.getElementById("demo5").innerHTML = "Square Root = " + Math.sqrt(64, 3);    <!-- 2nd parameter is not working -->
+      document.getElementById("demo6").innerHTML = "Absolute = " + Math.abs(-4.4);
+      document.getElementById("demo7").innerHTML = "Maximum = " + Math.max(0, 150, 20, 30, -8, -200);
+      document.getElementById("demo8").innerHTML = "Minimum = " + Math.min(0, 150, 20, 30, -8, -200);
+    </script>
+  </body>
+
+</html>
