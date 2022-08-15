@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+
+    <style media="screen">
+      body {
+        background-color: #FFF89C;
+      }
+      input {
+        width: 50%;
+        padding: 0.5% 2%;
+        border: solid;
+      }
+      button {
+        background-color: #FFB4B4;
+        padding: 0.5% 5%;
+        border: solid;
+      }
+      #div1{
+        transition: all 1s;
+        background-color: navy;
+        height: 0px;
+        width: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <h1>Enter a number to create a Square Shape</h1>
+      <input type="text" name="text" id = "n1" /><br><br>
+      <button type="button" name="button" id = "button"  onclick="myFn()" /><b>Create Square Shape</b></button><br><br>
+      <div id = "div1"></div>
+      </center>
+
+      <script type="text/javascript">
+        function myFn() {
+          let num = document.getElementById("n1").value;
+          num = Number(num);
+          if (isNaN(num) || num == "") {
+            document.getElementById('div1').style.width = "0px";
+            document.getElementById('div1').style.height = "0px";
+            alert("Alert! Input is not valid");
+          }
+          else if (num < 10000 || num >99999) {
+            document.getElementById('div1').style.width = "0px";
+            document.getElementById('div1').style.height = "0px";
+            alert("Alert! Enter a 5 digit number only");
+          }
+          else {
+            var sum = 0;
+            while(num) {
+              sum += num%10;
+              num = Math.floor(num/10);
+            }
+            var heightSq = sum;
+            var widthSq = sum;
+            var borderRadius = sum/5;
+            document.getElementById('div1').style.width = widthSq + "px";
+            document.getElementById('div1').style.height = heightSq + "px";
+            document.getElementById('div1').style.borderRadius = borderRadius + "px";
+          }
+        }
+      </script>
+  </body>
+
+</html>
