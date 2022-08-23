@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <input type="number" id="demo" placeholder="Enter a number (5-10)" />
+    <button onclick="myFun()">Test Input</button>
+    <p id = "p1"></p>
+    <script type="text/javascript">
+      function myFun() {
+        const message = document.getElementById("p1");
+        message.innerHTML = "";
+        let x = document.getElementById("demo").value;
+        try {
+          if (x == "") {
+            throw("Empty");
+          }
+          if (isNaN(x)) {
+            throw("Not a Number");
+          }
+          x = Number(x);
+          if (x<5) {
+            throw("less than 5");
+          }
+          if (x>10) {
+            throw("greater than 10");
+          }
+          alert("Number is Valid");
+        }
+        catch(err) {
+          message.innerHTML = "Input is " + err;
+        }
+        finally {
+          document.getElementById("demo").value = "";
+        }
+      }
+    </script>
+  </body>
+
+</html>
