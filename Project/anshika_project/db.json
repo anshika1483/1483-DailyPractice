@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "name": "Arpit Jain",
+      "email": "arpitjainn189@gmail.com",
+      "phone": "8950503357",
+      "address": "Rainbow paints and hardware, sanoli road",
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
